@@ -1,0 +1,14 @@
+[package]
+name = "unityrust"
+version = "0.1.0"
+authors = ["heartyhardy"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+#To specify that we are building a DLL for windows we specify "crate-type" as [dylib]
+[lib]
+name = "unityrust_interop"
+crate-type = ["dylib"]
+
+[dependencies]
